@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Layout from '@/components/Layout/Layout';
 import CollectionPage from '@/pages/CollectionPage/CollectionPage';
 import WineDetailPage from '@/pages/WineDetailPage/WineDetailPage';
@@ -14,7 +14,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <BrowserRouter basename="/ChaletVolchkovWineMenu">
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
@@ -24,6 +24,6 @@ export default function App() {
           <Route path="about" element={<AboutPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
