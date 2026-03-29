@@ -1,0 +1,37 @@
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.star {
+  color: var(--wine-gold);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.score {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--wine-gold);
+}
+
+.label {
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.large .star {
+  font-size: 22px;
+}
+
+.large .score {
+  font-size: 28px;
+}
+
+.large .label {
+  font-size: 12px;
+}
