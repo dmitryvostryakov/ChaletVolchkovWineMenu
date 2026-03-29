@@ -21,7 +21,8 @@
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
-  border-radius: var(--radius-sm);
+  -webkit-mask-image: radial-gradient(ellipse 70% 85% at center, black 50%, transparent 100%);
+  mask-image: radial-gradient(ellipse 70% 85% at center, black 50%, transparent 100%);
 }
 
 .fallback {
