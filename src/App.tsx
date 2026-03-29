@@ -14,7 +14,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ChaletVolchkovWineMenu">
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
